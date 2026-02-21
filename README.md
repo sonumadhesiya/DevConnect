@@ -71,3 +71,5 @@ cd backend
 docker build -t devconnect-backend .
 docker run -p 5000:5000 -e PORT=5000 -e JWT_SECRET=your_secret devconnect-backend
 ```
+## 👨‍💻 Author
+Sonu Madhesiya
