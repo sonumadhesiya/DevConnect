@@ -35,12 +35,12 @@ const Profiles = () => {
         <div className="glow-icon-container" style={{ padding: '1rem', marginBottom: '1.5rem' }}>
           <Users size={36} className="text-accent" />
         </div>
-        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-primary mb-4" style={{ fontSize: '3rem' }}>
+        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-primary mb-4 page-title">
           Discover Talent
         </h1>
         <p className="text-muted text-xl mb-10 max-w-2xl mx-auto">Explore our global network of elite developers. Search by specific skills to find the perfect collaborator for your next grand vision.</p>
 
-        <form onSubmit={handleSearch} className="flex justify-center flex-wrap gap-4 max-w-2xl mx-auto p-4 rounded-2xl" style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', backdropFilter: 'var(--glass)' }}>
+        <form onSubmit={handleSearch} className="flex justify-center flex-wrap gap-4 max-w-2xl mx-auto p-4 rounded-2xl search-form">
           <div className="flex-1 relative">
             <input
               type="text"

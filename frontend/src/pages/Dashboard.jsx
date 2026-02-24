@@ -77,7 +77,7 @@ const Dashboard = () => {
     <div className="container main-content py-10">
       <div className="flex justify-between items-center mb-10 pb-6 border-b" style={{ borderColor: 'var(--border)' }}>
         <div>
-          <h1 className="font-bold text-transparent bg-clip-text bg-gradient-primary flex items-center gap-3" style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>
+          <h1 className="font-bold text-transparent bg-clip-text bg-gradient-primary flex items-center gap-3 dashboard-title">
             <div className="bg-input p-3 rounded-xl border" style={{ borderColor: 'var(--border)', color: 'var(--primary-light)' }}>
               <User size={36} />
             </div>
@@ -106,7 +106,7 @@ const Dashboard = () => {
         </div>
       )}
       {showProfileForm && (
-        <div className="card mb-12 shadow-card" style={{ padding: '3rem' }}>
+        <div className="card mb-12 shadow-card dashboard-card">
           <h2 className="font-bold text-2xl mb-6 text-primary">{profile ? 'Edit Developer Profile' : 'Create Developer Profile'}</h2>
           <form onSubmit={handleProfileSubmit}>
             <div className="form-group mb-6">
@@ -178,7 +178,7 @@ const Dashboard = () => {
           </div>
 
           {showProjectForm && (
-            <div className="card mb-12 shadow-card" style={{ padding: '3rem' }}>
+            <div className="card mb-12 shadow-card dashboard-card">
               <h3 className="font-bold mb-6 text-2xl text-accent">Add New Project Repository</h3>
               <form onSubmit={handleProjectSubmit}>
                 <div className="grid grid-cols-2 gap-6 mb-6">

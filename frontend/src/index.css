@@ -479,6 +479,14 @@ textarea.form-control {
   gap: 2rem;
 }
 
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
 .nav-link {
   color: var(--text-muted);
   font-weight: 500;
@@ -604,4 +612,143 @@ textarea.form-control {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  max-width: 900px;
+}
+
+.hero-desc {
+  max-width: 650px;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.page-title {
+  font-size: 3rem;
+}
+
+.search-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  backdrop-filter: var(--glass);
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-card {
+  padding: 3rem;
+}
+
+/* Responsive Design Media Queries */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Common adjustments */
+  .page-title {
+    font-size: 2.25rem;
+  }
+
+  .dashboard-title {
+    font-size: 1.75rem;
+  }
+
+  .dashboard-card {
+    padding: 1.5rem;
+  }
+
+  .dashboard-card .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  /* Navbar adjustments */
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav-links.show-menu {
+    display: flex;
+  }
+
+  .nav-btn-wrapper {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .nav-btn-wrapper .btn {
+    width: 100%;
+  }
+
+  /* Home Section */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-desc {
+    font-size: 1.1rem;
+  }
+
+  .glow-icon-container {
+    padding: 1rem;
+  }
+
+  .glow-icon-container svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .main-content {
+    padding: 2rem 0;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
 }

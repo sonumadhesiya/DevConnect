@@ -16,11 +16,11 @@ const Home = () => {
           <Code2 size={48} className="text-primary" />
         </div>
 
-        <h1 className="font-bold" style={{ fontSize: '4.5rem', marginBottom: '1.5rem', lineHeight: '1.1', maxWidth: '900px' }}>
+        <h1 className="font-bold hero-title">
           The Ultimate Network <br /> for <span className="text-transparent bg-clip-text bg-gradient-primary">Top Developers</span>
         </h1>
 
-        <p className="text-muted" style={{ maxWidth: '650px', fontSize: '1.25rem', marginBottom: '3rem', lineHeight: '1.8' }}>
+        <p className="text-muted hero-desc">
           Create your profile, showcase your stunning projects, discover opportunities, and collaborate with world-class tech talents around the globe.
         </p>
 
