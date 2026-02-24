@@ -50,7 +50,7 @@ const Login = () => {
               type="email"
               className="form-control"
               name="email"
-              placeholder="you@example.com"
+              placeholder="Type your email here.."
               value={email}
               onChange={onChange}
               required

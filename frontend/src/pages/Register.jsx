@@ -67,7 +67,7 @@ const Register = () => {
               type="text"
               className="form-control"
               name="name"
-              placeholder="e.g. John Doe"
+              placeholder="Type your name here..."
               value={name}
               onChange={onChange}
               required
@@ -79,7 +79,7 @@ const Register = () => {
               type="email"
               className="form-control"
               name="email"
-              placeholder="you@example.com"
+              placeholder="type your email here..."
               value={email}
               onChange={onChange}
               required
